@@ -7,6 +7,7 @@ import { GiMineTruck } from "react-icons/gi";
 import { GrStorage } from "react-icons/gr";
 import { MdOutlineSettings } from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 const SideBar = () => {
   return (
@@ -24,8 +25,8 @@ const SideBar = () => {
             <div className="flex flex-col flex-1 px-3 mt-8">
               <div className="space-y-4">
                 <nav className="flex-1 space-y-2">
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     title=""
                     className="flex items-center px-4 py-2.5 text-sm font-medium text-white transition-all duration-200 bg-indigo-600 rounded-lg group"
                   >
@@ -33,10 +34,10 @@ const SideBar = () => {
                     <TiHome style={{ marginRight: '8px', fontSize: '20px' }}/>
                     Dashboard
                     </div>
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link
+                    to="/sites"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <div className="text-sm text-center flex ">
@@ -44,34 +45,34 @@ const SideBar = () => {
                     Sites
                     </div>
                     
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link
+                    to="/operators"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <div className="text-sm text-center flex ">
                     <GrUserWorker style={{ marginRight: '8px', fontSize: '20px' }} /> 
                      Operators
                     </div>
-                  </a>
+                  </Link>
                 </nav>
 
                 <hr className="border-gray-700" />
 
                 <nav className="flex-1 space-y-2">
-                  <a
-                    href="#"
+                  <Link
+                    to="/plant"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <div className="text-sm text-center flex ">
                     <GiMineTruck style={{ marginRight: '8px', fontSize: '22px' }}/>
                     Plant
                     </div>
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link
+                    to="/workshop"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-white rounded-lg hover:bg-indigo-600 group"
                   >
                    <div className="text-sm text-center flex ">
@@ -79,31 +80,31 @@ const SideBar = () => {
                     Workshop
 
                    </div>
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link
+                    to="/stores"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-white rounded-lg hover:bg-indigo-600 group"
                   >
                     <div className="text-sm text-center flex ">
                     <GrStorage style={{ marginRight: '8px', fontSize: '20px' }}/>
                     Stores
                     </div>
-                  </a>
+                  </Link>
                 </nav>
 
                 <hr className="border-gray-700" />
 
                 <nav className="flex-1 space-y-2">
-                  <a
-                    href="#"
+                  <Link
+                    to="settings"
                     className="flex items-center px-4 py-2.5 text-sm font-medium transition-all duration-200 text-white rounded-lg hover:bg-indigo-600 group"
                   >
                   <div className="text-sm text-center flex ">
                   <MdOutlineSettings style={{ marginRight: '8px', fontSize: '20px' }}/>
                     Settings
                   </div>
-                  </a>
+                  </Link>
                 </nav>
               </div>
 
