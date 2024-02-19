@@ -22,6 +22,7 @@ function App() {
     <Router>
     <SideBar/>
     <TopBar/>
+    
       <Routes>
         <Route path="/" element={<Dashboard/>}/>
         <Route path="/operators" element={<Operators/>}/>

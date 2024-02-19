@@ -3,7 +3,7 @@ import { IoIosNotifications } from "react-icons/io";
 import { TbMessage } from "react-icons/tb";
 import { FiSearch } from "react-icons/fi";
 
-const TopBar = () => {
+const TopBar = () => {9
   return (
     <div className="pl-64">
       <div className="sticky top-0 z-10 flex flex-shrink-0 h-16 bg-white border-b border-gray-200  ">
@@ -60,3 +60,4 @@ const TopBar = () => {
 };
 
 export default TopBar;
+ 
